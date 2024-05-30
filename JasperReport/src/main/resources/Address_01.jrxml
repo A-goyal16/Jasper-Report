@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+    name="InputFieldsReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c8a2b36f-0dd2-4760-9563-8d40b4739cd2">
+    <queryString>
+        <![CDATA[]]>
+    </queryString>
+    <field name="id" 		class="java.lang.Integer"/>
+    <field name="firstname" class="java.lang.String"/>
+    <field name="lastname" class="java.lang.String"/>
+    <field name="street" class="java.lang.String"/>
+    <field name="city" class="java.lang.String"/>
+    <detail>
+        <band height="20" splitType="Stretch">
+            <textField>
+                <reportElement x="50" y="0" width="50" height="20" uuid="896943c4-d5d2-4820-96b0-3d0f1aa63d49"/>
+                <textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="100" y="0" width="100" height="20" uuid="3cbf21f1-bacb-4c3f-b4f5-4d171a1ad178"/>
+                <textFieldExpression><![CDATA[$F{firstname}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="200" y="0" width="100" height="20" uuid="d48a6195-0bb4-4a5c-aa70-57d3aa1619f5"/>
+                <textFieldExpression><![CDATA[$F{lastname}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="300" y="0" width="100" height="20" uuid="7f4aa26e-1030-4935-b11f-0785c69f5bc1"/>
+                <textFieldExpression><![CDATA[$F{street}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="400" y="0" width="100" height="20" uuid="6d1cfcb9-ded9-4d8b-b36f-9b26c0b8c29f"/>
+                <textFieldExpression><![CDATA[$F{city}]]></textFieldExpression>
+            </textField>
+            
+        </band>
+    </detail>
+</jasperReport>
